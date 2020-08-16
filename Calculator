@@ -1,0 +1,37 @@
+import java.util.*;
+
+interface Oper
+{
+    int operations(int a,int b);
+}
+
+public class Calculator
+{
+    public static void main(String[] args)
+    {
+        Oper add= (int a, int b)-> a+b;
+        Oper difference=(int a, int b)-> a-b;
+        Oper product=(int a, int b)-> a*b;
+        Oper safeDivision=(int a, int b)-> a/b;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Choose Operation 1. Add, 2. Diff, 3. Product, 4. Safe division");
+
+        int n=sc.nextInt();
+
+        switch (n)
+        {
+            case 1:System.out.println("Add = "+add.operations(6,4));
+                break;
+            case 2:System.out.println("Diff = "+difference.operations(10,5));
+                break;
+            case 3:System.out.println("Product = "+product.operations(10,5));
+                break;
+            case 4:System.out.println("Safe Division = "+safeDivision.operations(10,2));
+                break;
+
+
+        }
+    }
+}
