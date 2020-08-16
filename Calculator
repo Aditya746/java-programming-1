@@ -1,5 +1,4 @@
 //Design a Calculator class which contains four lambda methods:
-
 //a. add(a, b)
 //b. difference(a, b)
 //c. product(a, b)
